@@ -40,8 +40,9 @@ Diamant is my own language. Each repository is a separate project that explores 
 ## 🧰 Tech
 
 * **Assembly:** x64 MASM, NASM, x86 bare metal, Win32 API
-* **Languages:** Python, C#, C, VBA, JavaScript
+* **Languages:** Python, C#, C, SQL, VBA, JavaScript
 * **Backend:** ASP.NET Core MVC, SignalR, EF Core, SQL Server, Identity, Azure
+* **Tools:** Git, Visual Studio, GitHub
 * **Concepts:** lexers and parsers, ASTs, code generation, machine-code encoding, OS boot and interrupts
 
 ## 📈 Right now
