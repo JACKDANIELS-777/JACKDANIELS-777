@@ -1,37 +1,50 @@
-# Hi, I'm JACKDANIELS-777 👋
+# Hi, I'm Jack 👋
 
-I am a Systems Programmer specializing in compiler design, custom interpreters, low-level operating system mechanics, and high-performance backend architecture. I love stripping away abstractions to write zero-dependency code close to the metal.
+Systems programmer from South Africa. I build **languages, compilers and interpreters**, mostly from scratch and
+often in raw assembly, and I write **ASP.NET backends** for work and study.
 
----
-
-## 🛠️ Deep Tech & Systems Programming
-
-### 💎 The Diamant Ecosystem & Language Design
-I am designing and implementing **Diamant**, a custom programming language, building its entire stack from the hardware up:
-* **[Diamant](https://github.com/JACKDANIELS-777/Diamant):** The core prototype tree-walk interpreter.
-* **[Diamant_Compiler](https://github.com/JACKDANIELS-777/Diamant_Compiler):** Building out the compilation pipeline.
-* **[Diamant_OS](https://github.com/JACKDANIELS-777/Diamant_OS):** A minimal operating system kernel written in x64 Assembly to explore low-level hardware control.
-* **[Assembler_Diamant](https://github.com/JACKDANIELS-777/Assembler_Diamant) & [Diamant_Assembler](https://github.com/JACKDANIELS-777/Diamant_Assembler):** Custom tooling and translation engines for the language stack.
-
-### ⚡ Low-Level & Esoteric Interpreters
-* **[MASM-GemmaStrike](https://github.com/JACKDANIELS-777/MASM-GemmaStrike):** A high-speed, zero-dependency x64 Assembly gateway for Google’s Gemma AI. Implements direct register-to-socket execution via a MASM engine paired with a lightweight Python bridge.
-* **[Nasm_Intrepreter](https://github.com/JACKDANIELS-777/Nasm_Interpreter):** An Abstract Syntax Tree (AST) interpreter built entirely in raw x86_64 NASM assembly.
-* **[Masm_Gui](https://github.com/JACKDANIELS-777/Masm_Gui):** Designing native Windows GUI applications using raw MASM.
-* **[Excel_Intreperter](https://github.com/JACKDANIELS-777/Excel_Intreperter) & [JSE_intreperter](https://github.com/JACKDANIELS-777/JSE_intreperter):** Pushing limited environments to their absolute breaking points by implementing language parsers in VBA and legacy Microsoft JScript.
-
-### 🧮 Automation & Developer Tooling
-* **[AST-Csharp-Automarker](https://github.com/JACKDANIELS-777/AST-Csharp-Automarker):** A tool designed to parse and evaluate C# code structures using Abstract Syntax Trees to automate code grading and verification.
+I started with Python about 8 years ago. Most of what's below was written without frameworks, and some of it in Notepad.
 
 ---
 
-## 🧰 Tech Stack & Weapons of Choice
+## ⭐ Highlights
 
-* **Low-Level:** x64 Assembly (MASM, NASM)
-* **Languages & Frameworks:** Python, C# (.NET Core / ASP.NET MVC), VBA, JavaScript
-* **Core Concepts:** Compiler Design, Abstract Syntax Trees (AST), OS Kernels, Socket Programming, Data Analytics, Relational Databases (SQL)
+| Project | What it is | Size |
+|---|---|---|
+| **[Masm_Gui](https://github.com/JACKDANIELS-777/Masm_Gui)** | A Windows GUI framework in pure **x64 MASM**: self-drawn controls, a layout parser that builds UIs from one string, and **TrenchScript**, a scripting language with its own VM | ~10,600 lines of asm |
+| **[Nasm_Interpreter](https://github.com/JACKDANIELS-777/Nasm_Interpreter)** | An expression interpreter in **x64 NASM**: lexer, recursive parser, a real AST in a hand-managed arena, tree-walking evaluator | ~1,400 lines of asm |
+| **[Assembler_Diamant](https://github.com/JACKDANIELS-777/Assembler_Diamant)** | Compiles a small register-level language straight to **x86-64 machine code** (REX, ModR/M, call fix-ups), with no assembler involved | ~1,900 lines of Python |
+| **[Diamant_OS](https://github.com/JACKDANIELS-777/Diamant_OS)** | A tiny OS in **x86 assembly**: boot sector, 32-bit protected mode, its own interrupts and keyboard driver, a hand-made bitmap font in VGA mode 13h | ~2,300 lines of asm |
+| **[Excel_Interpreter](https://github.com/JACKDANIELS-777/Excel_Interpreter)** | A programming language that runs **inside Excel**: lexer and interpreter in VBA, with a bridge out to Python | ~1,800 lines of VBA |
+
+## 💎 The Diamant projects
+
+Diamant is my own language. Each repository is a separate project that explores a different part of building one:
+
+* **[Diamant](https://github.com/JACKDANIELS-777/Diamant):** a tree-walking interpreter that can call **Python and C** from the same program.
+* **[Diamant_Compiler](https://github.com/JACKDANIELS-777/Diamant_Compiler):** compiles Diamant to 32-bit NASM for **bare metal** (no OS needed).
+* **[Assembler_Diamant](https://github.com/JACKDANIELS-777/Assembler_Diamant):** source → raw x86-64 bytes.
+* **[Diamant_Assembler](https://github.com/JACKDANIELS-777/Diamant_Assembler):** an x86-64 instruction encoder, checked byte-for-byte against NASM.
+* **[Diamant_OS](https://github.com/JACKDANIELS-777/Diamant_OS):** the bootable OS above.
+* **[Diamant_Int](https://github.com/JACKDANIELS-777/Diamant_Int):** an early version's page: C DLLs and the Windows API from Diamant.
+
+## 🧪 More experiments
+
+* **[MASM-GemmaStrike](https://github.com/JACKDANIELS-777/MASM-GemmaStrike):** an x64 MASM front end for Google's Gemma model, with a small Python bridge.
+* **[JSE_intreperter](https://github.com/JACKDANIELS-777/JSE_intreperter):** a language parser in legacy Microsoft JScript.
+* **[AST-Csharp-Automarker](https://github.com/JACKDANIELS-777/AST-Csharp-Automarker):** grades C# code by walking its syntax tree.
+
 
 ---
 
-## 📈 What I'm Learning / Working On Right Now
-* Integrating custom multi-threaded socket pipelines into lightweight Python servers.
-* Expanding the repository pattern architectures to manage localized SQL data streams cleanly.
+## 🧰 Tech
+
+* **Assembly:** x64 MASM, NASM, x86 bare metal, Win32 API
+* **Languages:** Python, C#, C, VBA, JavaScript
+* **Backend:** ASP.NET Core MVC, SignalR, EF Core, SQL Server, Identity, Azure
+* **Concepts:** lexers and parsers, ASTs, code generation, machine-code encoding, OS boot and interrupts
+
+## 📈 Right now
+
+* Building **FoosNet**, a real-time multiplayer foosball game: ASP.NET Core + SignalR, with server-side physics,
+  accounts, bans and match replays, hosted on Azure.
