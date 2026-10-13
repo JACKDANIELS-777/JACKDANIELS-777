@@ -1,7 +1,7 @@
 # Hi, I'm Jack 👋
 
 Systems programmer from South Africa. I build **languages, compilers and interpreters**, mostly from scratch and
-often in raw assembly, and I write **ASP.NET backends** for work and study.
+often in raw assembly, and I write **ASP.NET backends**  and study.
 
 I started with Python about 8 years ago. Most of what's below was written without frameworks, and some of it in Notepad.
 
